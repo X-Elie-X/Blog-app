@@ -57,14 +57,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
-
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+# 📖 BLOG APP WITH ROR <a name="about-project"></a>
+The Blog app will be a classic example of a blog website. You will creat a fully functional website that will show the list of post and empower readers to interact with them by adding comments and likes posts
 
 ## 🛠 Built With <a name="built-with"></a>
-
+-ROR
 ### Tech Stack <a name="tech-stack"></a>
 
 > Describe the tech stack and include only the relevant sections that apply to your project.
@@ -92,25 +89,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -124,13 +105,12 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
+Ruby version : ruby 3.1.2p20 run ruby -v
+Ruby SQLite3 : 3.40.0 run sqlite3 --version
+npm version : 8.15.0 run npm -v
+yarn version : 1.22.19 run yarn -v
+Database : PostgreSQL
 
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
@@ -141,7 +121,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/X-Elie-X/Blog-app.git
 ```
 --->
 
@@ -150,13 +130,10 @@ Example commands:
 Install this project with:
 
 <!--
-Example command:
+bundler install
 
 ```sh
-  cd my-project
-  gem install
-```
---->
+
 
 ### Usage
 
@@ -198,33 +175,17 @@ Example:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤**Elie Harfouche**
 
-👤 **Author1**
+- GitHub: [@X-Elie-X](https://github.com/X-Elie-X)
+- LinkedIn: [Elie Harfouche](https://www.linkedin.com/in/elie-m-harfouche/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -260,21 +221,7 @@ I would like to thank...
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
