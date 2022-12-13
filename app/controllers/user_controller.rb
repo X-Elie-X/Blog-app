@@ -1,4 +1,4 @@
-class UserController < ActionController
+class UserController < ApplicationController
   def index; end
 
   def show; end
