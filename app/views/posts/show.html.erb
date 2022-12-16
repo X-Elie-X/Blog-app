@@ -1,1 +1,38 @@
-<h1>User Post<h1>
+<div class = "post_show_container" >
+  <div >
+    <div  class= "img"> <%= image_tag "img/profile.jpeg" %>  </div>
+    <div >
+      <h3><%= @user.name %></h3>
+      <span >
+        Number of posts: <% if @user.post_counter.to_i > 0 %> <%= @user.post_counter %> <% else %>
+        <%= 0 %> <% end %>
+      </span>
+    </div>
+  </div>
+  <div>
+    <% @user.three_recent_posts.each do |post| %>
+    <div >
+      <h5>Post #<%= @user.three_recent_posts.index(post)+1 %></h5>
+      <h4><%= post.title %></h4>
+      <p><%= post.text %></p>
+      <% if post.comments_counter.to_i > 0 %>
+      <span>Comments: <%= post.comments_counter %></span>
+      <% else %>
+      <span>Comments: <%= 0 %></span>
+      <% end %> <% if post.likes_counter.to_i > 0 %>
+      <span>Likes:<%= post.likes_counter %></span>
+      <% else %>
+      <span>Likes: <%= 0 %></span>
+    </div>
+    <% end %>
+    <% if post.comments_counter.to_i > 0 %>
+    <div >
+      <% post.five_recent_comments.each do |comment| %>
+      <h5><%= comment.author.name %></h5>
+      <p><%= comment.text %></p>
+      <% end %>
+    </div>
+    <% end %>
+    <% end %>
+  </div>
+</div>

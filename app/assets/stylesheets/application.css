@@ -1,15 +1,97 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+/* * {
+  border: 1px solid green;
+} */
+
+.user_index_container,
+.user_show_container {
+  margin-left: 160px;
+}
+
+.user_profile,
+.show_profile {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.borders {
+  border: 1px solid black;
+  width: 800px;
+  height: 100px;
+  margin-top: 25px;
+  display: flex;
+}
+
+.user_name {
+  font-family: 'Unbounded', cursive;
+  font-size: 50px;
+  margin-left: 20px;
+  width: 200px;
+  height: 50px;
+  margin-top: 24px;
+}
+
+.num {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 30px;
+  margin-left: 300px;
+  height: 30px;
+  margin-top: 50px;
+}
+
+.border {
+  border: 1px solid black;
+  width: 990px;
+  margin-bottom: 30px;
+}
+
+.bio,
+.post_show_id {
+  font-family: 'Unbounded', cursive;
+  color: black;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.post_show_title {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.post_show_text,
+.comment_like {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 17px;
+}
+
+.post_show_text {
+  margin-left: 10px;
+}
+
+.comment_like {
+  margin-left: 800px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  margin-left: 370px;
+  margin-bottom: 40px;
+  font-family: 'Unbounded', cursive;
+  font-size: 30px;
+  height: 60px;
+  cursor: pointer;
+  color: black;
+  background-color: #fff;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: black;
+}
