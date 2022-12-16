@@ -1,6 +1,6 @@
 <div class="user_show_container">
   <div  class= "show_profile">
-   <div  class= "img_1"> <%= image_tag "img/profile.jpeg" %>  </div>
+   <div> <%= image_tag "img/profile.jpeg" %>  </div>
     <div class= "borders">
       <h3 class = "user_name"><%= @user.name %></h3>
       <span class="num">
@@ -17,18 +17,18 @@
     <% @user.most_recent_post.each do |post| %>
     <div class = "border">
       <h5 class = "post_show_id">Post #<%= @user.post_counter %></h5>
-      <h4 class = "post_show_title"><%= post.title %></h4>
+      <h4 class = "post_show_titles"><%= post.title %></h4>
       <p class = "post_show_text"><%= post.text %></p>
       <% if post.comments_counter.to_i > 0 %>
       <span  >Comments: <%= post.comments_counter %></span>
       <% else %>
-      <div class = "comment_like">
+      
       <span >Comments: <%= 0 %></span>
       <% end %> <% if post.likes_counter.to_i > 0 %>
-      <span>Likes:<%= post.likes_counter %></span>
+      <spam>Likes:<%= post.likes_counter %></span>
       <% else %>
-      <span class = "like">Likes: <%= 0 %></span>
-       </div>
+      <span >Likes: <%= 0 %></span>
+    
     </div>
       <% end %> <% end %>
   </div>

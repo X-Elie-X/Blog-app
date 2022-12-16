@@ -1,38 +1,39 @@
 <div class = "post_show_container" >
-  <div >
+  <div class="post_show">
     <div  class= "img"> <%= image_tag "img/profile.jpeg" %>  </div>
-    <div >
-      <h3><%= @user.name %></h3>
-      <span >
-        Number of posts: <% if @user.post_counter.to_i > 0 %> <%= @user.post_counter %> <% else %>
-        <%= 0 %> <% end %>
+    <div class = "borders" >
+      <h3 class="user_name"><%= @posts.author.name %></h3>
+      <span class="num" >
+        Number of posts: <%= @posts.author.post_counter %>
       </span>
     </div>
   </div>
   <div>
-    <% @user.three_recent_posts.each do |post| %>
-    <div >
-      <h5>Post #<%= @user.three_recent_posts.index(post)+1 %></h5>
-      <h4><%= post.title %></h4>
-      <p><%= post.text %></p>
-      <% if post.comments_counter.to_i > 0 %>
-      <span>Comments: <%= post.comments_counter %></span>
+
+    <div class="borders" >
+      <h4 class="post_name"><%= @posts.title %></h4>
+      <p class="text_post"><%= @posts.text %></p>
+      <span class ="num_1">
+     <span > <% if @posts.comments_counter > 0 %></span>
+      <span >Comments: <%= @posts.comments_counter %></span>
       <% else %>
       <span>Comments: <%= 0 %></span>
-      <% end %> <% if post.likes_counter.to_i > 0 %>
-      <span>Likes:<%= post.likes_counter %></span>
+      <% end %> <% if @posts.likes_counter.to_i > 0 %>
+      <span>Likes:<%= @posts.likes_counter %></span>
       <% else %>
       <span>Likes: <%= 0 %></span>
+      </span>
     </div>
     <% end %>
-    <% if post.comments_counter.to_i > 0 %>
-    <div >
-      <% post.five_recent_comments.each do |comment| %>
-      <h5><%= comment.author.name %></h5>
-      <p><%= comment.text %></p>
+    <% if @posts.comments_counter.to_i > 0 %>
+    <div class="borders_1" >
+      <% @posts.most_recent_comments.each do |comment| %>
+    <div class="text_show">
+      <h5 class="post_name"><%= comment.author.name %></h5>
+      <p class="post_text"><%= comment.text %></p>
+      </div>
       <% end %>
     </div>
-    <% end %>
     <% end %>
   </div>
 </div>
