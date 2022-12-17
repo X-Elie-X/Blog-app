@@ -32,5 +32,6 @@
     </div>
       <% end %> <% end %>
   </div>
-  <button  class="btn" type="button">See all posts</button>
+  <div class="btn"><%= link_to "See all posts", user_posts_path(user_id: @user.id), class: "posts-btn" %></div>
+
 </div>

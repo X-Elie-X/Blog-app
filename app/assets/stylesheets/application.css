@@ -103,6 +103,7 @@
   cursor: pointer;
   color: black;
   background-color: #fff;
+  width: 400px;
 }
 
 .btn:hover {
