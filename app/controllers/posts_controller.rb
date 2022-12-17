@@ -14,8 +14,8 @@ class PostsController < ApplicationController
   end
 
   def create
-    @author = User.find_by(id: params[:user_id])
-    @post = @author.posts.new(post_params)
+    @current_user = User.find_by(id: params[:user_id])
+    @post = @current_user.posts.new(post_params)
     @post.likes_counter = 0
     @post.comments_counter = 0
 
