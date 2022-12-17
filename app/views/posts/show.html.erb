@@ -1,39 +1,24 @@
-<div class = "post_show_container" >
-  <div class="post_show">
-    <div  class= "img"> <%= image_tag "img/profile.jpeg" %>  </div>
-    <div class = "borders" >
-      <h3 class="user_name"><%= @posts.author.name %></h3>
-      <span class="num" >
-        Number of posts: <%= @posts.author.post_counter %>
-      </span>
+<div class="show_post_view">
+ <div class="post-content">
+        <div class="ptitle"> Post : <%= @post.title%> by <%= @post.author.name %></div>
+        <div class="ptext"><%= @post.text%></div>
+         <div class="pcountLikes">
+        Comments: <%= @post.comments_counter%>
+        Likes: <%= @post.likes_counter%>
     </div>
-  </div>
-  <div>
-
-    <div class="borders" >
-      <h4 class="post_name"><%= @posts.title %></h4>
-      <p class="text_post"><%= @posts.text %></p>
-      <span class ="num_1">
-     <span > <% if @posts.comments_counter > 0 %></span>
-      <span >Comments: <%= @posts.comments_counter %></span>
-      <% else %>
-      <span>Comments: <%= 0 %></span>
-      <% end %> <% if @posts.likes_counter.to_i > 0 %>
-      <span>Likes:<%= @posts.likes_counter %></span>
-      <% else %>
-      <span>Likes: <%= 0 %></span>
-      </span>
+    <div class="add-comment-container">
+        <%= link_to "Add A New Comment", new_user_post_comment_path(user_id: @post.author_id, post_id: @post.id), class: "new-comment-btn" %>
+        <%= form_with model: @like, url: user_post_likes_path(post_id: @post.id) do |form| %>
+        <%= form.submit "Add Like", class: "like-btn" %>
+        <% end %>
     </div>
-    <% end %>
-    <% if @posts.comments_counter.to_i > 0 %>
-    <div class="borders_1" >
-      <% @posts.most_recent_comments.each do |comment| %>
-    <div class="text_show">
-      <h5 class="post_name"><%= comment.author.name %></h5>
-      <p class="post_text"><%= comment.text %></p>
-      </div>
-      <% end %>
     </div>
-    <% end %>
-  </div>
-</div>
+     <div class="comments-container"> 
+     <% @post.comments.each do |comments| %>
+     <div class="comments">
+     <div class="comments-context">
+     <%= comments.author.name %> :  <%= comments.text %>
+     </div>
+     </div>
+     <% end %>
+ </div>
