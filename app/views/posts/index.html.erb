@@ -1,1 +1,18 @@
-<h1>Post detail<h1>
+<div class= "post_index_container">
+  <% @post.each do |post| %>
+  <div >
+    <div class="bord">
+      <h3 class="post_name">Post: <%= post.title%> Created by <span><%= post.author.name %></span></h3>
+      <p class ="num_2">
+        comments:  <% if post.comments_counter.to_i > 0 %> <%= post.comments_counter  %> <% else %> 0
+        <% end %> , likes :<% if post.likes_counter.to_i > 0 %> <%= post.likes_counter %> <% else
+        %> 0 <% end %>
+      </p>
+
+  <div class="borders_1" >
+    <h3 class="post_name">Comments : </h3>
+    <% post.most_recent_comments.each do |comment|%> <div class="name_3"><p><%= comment.author.name %>: &nbsp; </p>
+      <p><%= comment.text %></p></div> <% end %>
+  </div>
+  <% end %>
+</div>

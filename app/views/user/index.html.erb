@@ -1,1 +1,15 @@
-<h1>List of users<h1>
+<div class="user_index_container">
+<h1 class="welcome">Welcome to the Users Page. Below is the list of users.</h1>
+    <% User.all.each do |user| %>
+    <%= link_to user do %>
+    <div class="user-container">
+    <div  class = "user_profile">
+      <div> <%= image_tag "img/profile.jpeg" %>  </div>
+    <div class="borders">
+    <div class="user-name"><%= user.name %></div>
+    <div class="num">Number Of Posts: <%= user.post_counter %></div>
+    </div>
+    </div>
+    <% end %>
+    <% end %>
+</div>
