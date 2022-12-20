@@ -53,11 +53,15 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'rails-controller-testing'
   gem 'rspec-rails'
+  gem 'database_cleaner'
+  gem 'factory_bot_rails'
+  
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
+  gem 'bullet', group: 'development'
   # gem "rails_live_reload"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]

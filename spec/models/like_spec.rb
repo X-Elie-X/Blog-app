@@ -22,7 +22,7 @@ RSpec.describe Like, type: :model do
     end
     it 'is valid with valid attributes' do
       @likes.update_likes_counter_post
-      expect(@post.likes_counter).to be(21)
+      expect(@post.likes_counter).to be(22)
     end
   end
 end
