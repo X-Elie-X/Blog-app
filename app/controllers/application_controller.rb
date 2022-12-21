@@ -12,5 +12,4 @@ class ApplicationController < ActionController::Base
       user_params.permit(:email, :password, :remember_me)
     end
   end
-  end
-
+end
