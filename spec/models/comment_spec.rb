@@ -26,7 +26,7 @@ RSpec.describe Comment, type: :model do
     end
     it 'is valid with valid attributes' do
       @comment.update_comments_counter_post
-      expect(@post.comments_counter).to be(2)
+      expect(@post.comments_counter).to be(3)
     end
   end
 end
