@@ -88,7 +88,11 @@ The Blog app will be a classic example of a blog website. You will creat a fully
 </details>
 
 <!-- Features -->
+### Key Features <a name="key-features"></a>
+ 
 
+- **Create a blog post**
+- **Give like, comment for the post** 
 
 
 
@@ -181,7 +185,11 @@ Example:
 - GitHub: [@X-Elie-X](https://github.com/X-Elie-X)
 - LinkedIn: [Elie Harfouche](https://www.linkedin.com/in/elie-m-harfouche/)
 
+👤 **Abigiya Tadesse**
 
+* GitHub: [@githubhandle](https://github.com/AbigiyaTY)
+* Twitter: [@twitterhandle](https://twitter.com/AbigiyaTY)
+* LinkedIn: [@LinkedIn](https://www.linkedin.com/in/AbigiyaTY)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
