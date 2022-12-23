@@ -1,8 +1,13 @@
 class User < ApplicationRecord
+  include Devise::JWT::RevocationStrategies::Denylist
+
   # Include default devise modules. Others available are:
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
-         :confirmable, :lockable, :trackable
+         :confirmable, :lockable, :trackable,
+         :jwt_authenticatable, jwt_revocation_strategy: Denylist
+
+
 
   has_many :comments, foreign_key: 'author_id', dependent: :destroy
   has_many :posts, foreign_key: 'author_id', dependent: :destroy
@@ -19,4 +24,8 @@ class User < ApplicationRecord
   def most_recent_post
     Post.order(created_at: :desc).limit(3)
   end
+  def jwt_payload
+    super
+  end
+  
 end
