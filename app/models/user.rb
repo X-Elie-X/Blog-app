@@ -24,8 +24,4 @@ class User < ApplicationRecord
   def most_recent_post
     Post.order(created_at: :desc).limit(3)
   end
-  def jwt_payload
-    super
-  end
-  
 end
