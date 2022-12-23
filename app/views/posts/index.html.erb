@@ -1,6 +1,7 @@
 <div class="posts_index_view">
     <div class="post_show">
-    <div  class= "img"> <%= image_tag "img/profile.jpeg" %>  </div>
+    <div> <img src= "<%= @user.photo %>" class="py-2 userImage"> </div>
+
     <div class = "borders" >
       <h3 class="user_name"><%= @user.name %></h3>
       <span class="num" >

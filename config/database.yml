@@ -25,7 +25,7 @@ development:
   <<: *default
   database: blog_app_development
   username: postgres
-  password: 12@34
+  password: Elie
   host: localhost
   port: 5432
 
@@ -45,7 +45,7 @@ test:
   <<: *default
   database: Blog_app_test
   username: postgres
-  password: 12@34
+  password: Elie
   host: localhost
   port: 5432
 # If the connection URL is provided in the special DATABASE_URL environment
