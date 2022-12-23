@@ -10,6 +10,17 @@ class PostsController < ApplicationController
     @user = User.find(params[:user_id])
     @post = @user.posts.find(params[:id])
     @comments = @post.comments.includes(:author)
+    
+    respond_to do |format|
+      format.html
+      format.json do
+        if current_user.id == params[:id].to_i
+          render json: @post.comments
+        else
+          render html: "You are not authorized "
+        end
+      end
+    end
   end
 
   def new
