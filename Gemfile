@@ -94,7 +94,7 @@ gem 'devise'
 gem 'cancancan'
 
 # jwt api authentication
-gem 'jwt'
+gem 'devise-jwt'
 
 # rubocop linters
 gem 'rubocop', '>= 1.0', '< 2.0'
