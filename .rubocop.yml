@@ -40,12 +40,10 @@ Style/DefWithParentheses:
   Enabled: false
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
-
 Layout/HashAlignment:
   EnforcedColonStyle: key
-  Layout/EndOfLine:
+Layout/EndOfLine:
   Enabled: False
-
 Layout/ExtraSpacing:
   AllowForAlignment: false
 Layout/MultilineMethodCallIndentation:
