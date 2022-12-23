@@ -1,6 +1,7 @@
 <div class="posts_index_view">
     <div class="post_show">
-    <div  class= "img"> <%= image_tag "img/profile.jpeg" %>  </div>
+    <div> <img src= "<%= @user.photo %>" class="py-2 userImage"> </div>
+
     <div class = "borders" >
       <h3 class="user_name"><%= @user.name %></h3>
       <span class="num" >
@@ -22,6 +23,9 @@
         Comments: <%= post.comments_counter%>
         Likes: <%= post.likes_counter%>
     </div>
+    <% if can? :destroy, post %>
+        <%= button_to "Delete Post", user_post_path(post.author.id, post.id), method: :delete, class: "delete-btn" %>
+        <% end %>
         </div>
     <div class="comments-container"> 
      <% post.most_recent_comments.each do |comments| %>

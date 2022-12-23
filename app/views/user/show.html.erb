@@ -1,6 +1,6 @@
 <div class="user_show_container">
   <div  class= "show_profile">
-   <div class="user-icon"> <%= image_tag "img/profile.jpeg" %>  </div>
+   <div> <img src= "<%= @user.photo %>" class="py-2 userImage"> </div>
     <div class= "borders">
       <h3 class = "user_name"><%= @user.name %></h3>
       <span class="num">
@@ -25,10 +25,10 @@
       
       <span >Comments: <%= 0 %></span>
       <% end %> <% if post.likes_counter.to_i > 0 %>
-      <spam>Likes:<%= post.likes_counter %></span>
+      <span>Likes:<%= post.likes_counter %></span>
       <% else %>
       <span >Likes: <%= 0 %></span>
-    
+    </div>
     </div>
       <% end %> <% end %>
   </div>
