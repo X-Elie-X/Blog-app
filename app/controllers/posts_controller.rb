@@ -28,6 +28,7 @@ class PostsController < ApplicationController
       render :new, alert: ':( Cannot Create post retry again :('
     end
   end
+
   def destroy
     @user = User.find(params[:user_id])
     @post = @user.posts.find(params[:id])
@@ -35,6 +36,7 @@ class PostsController < ApplicationController
     @post.destroy
     redirect_to user_posts_path, notice: 'Deleted Post'
   end
+
   private
 
   def post_params

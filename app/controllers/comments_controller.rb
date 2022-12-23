@@ -17,6 +17,7 @@ class CommentsController < ApplicationController
       render :new, alert: ':( Cannot Create comment retry again :('
     end
   end
+
   def destroy
     @post = Post.find(params[:post_id])
     @comment = Comment.find(params[:id])
@@ -24,6 +25,7 @@ class CommentsController < ApplicationController
     @comment.destroy
     redirect_to user_post_path(user_id: @post.author_id, post_id: @post.id), notice: 'Deleted Comment'
   end
+
   private
 
   def comment_params

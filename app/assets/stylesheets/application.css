@@ -95,15 +95,10 @@
 }
 
 .btn {
-  margin-left: 300px;
-  margin-bottom: 40px;
   font-family: 'Unbounded', cursive;
-  font-size: 30px;
-  height: 60px;
   cursor: pointer;
   color: black;
   background-color: #fff;
-  width: 400px;
 }
 
 .btn:hover {
@@ -177,7 +172,7 @@
 .post-content {
   border-style: solid;
   border-width: 4px;
-  height: 130px;
+  height: 310px;
   width: 700px;
   margin-top: 1.5rem;
   margin-left: 25rem;
@@ -199,6 +194,7 @@
   margin: 0.25rem 0 1rem 1rem;
   font-size: 1.05rem;
   font-weight: 700;
+  height: 180px;
 }
 
 .pcount {
@@ -269,6 +265,7 @@
   height: 25px;
   width: 200px;
   font-family: sans-serif;
+  margin-bottom: 1%;
 }
 
 .like-btn {
@@ -284,87 +281,31 @@
   font-weight: 700;
 }
 
-.welcome {
-  text-align: center;
-  font-size: 2.05rem;
-  font-weight: 700;
+#singup {
+  margin-top: 5%;
 }
 
-.sign-up-container {
-  border-style: solid;
-  border-width: 2px;
-  border-color: #5c5c5e;
-  margin: 1rem 20rem 1rem 20rem;
-  width: 950px;
+.bgColor {
+  background-color: #ce9cc0;
+  color: #000;
 }
 
-.field {
-  margin: 1rem 0 1rem 1rem;
-  font-size: 1.05rem;
-  font-weight: 700;
+.submit input {
+  color: #fff;
+  background-color: #000;
+  margin-top: 1%;
 }
 
-.sign-up-btn {
-  margin: 1rem 0 1rem 1rem;
-  display: block;
-  border-style: solid;
-  border-width: 4px;
-  height: 30px;
-  width: 150px;
-  box-shadow: 5px 10px #0c0c0c;
-  border-color: #5c5c5e;
-  font-size: 1.05rem;
-  font-weight: 700;
+.submit input:hover {
+  color: #000;
+  background: #fff;
 }
 
-.log-container {
-  margin: 1rem 20rem 1rem 25rem;
-  width: 950px;
+.LogIn {
+  color: #fff;
+  margin-left: 35%;
 }
 
-.log-btn {
-  margin: 1rem 0 1rem 1rem;
-  display: block;
-  border-style: solid;
-  border-width: 4px;
-  height: 30px;
-  width: 750px;
-  box-shadow: 5px 10px #0c0c0c;
-  border-color: #5c5c5e;
-  font-size: 1.05rem;
-  font-weight: 700;
-}
-
-.flabel {
-  margin: 1rem 0 1rem 1rem;
-  font-size: 1.15rem;
-  font-weight: 700;
-}
-
-.ftext {
-  margin: 1rem 0 1rem 1rem;
-  font-size: 1.05rem;
-  font-weight: 700;
-  height: 30px;
-  width: 750px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #000;
-}
-
-.render {
-  margin: 1rem 0 1rem 1rem;
-  font-size: 0.95rem;
-  font-weight: 500;
-}
-
-.finput {
-  margin: 0.45rem 0 1rem 1rem;
-  font-size: 1.05rem;
-  font-weight: 700;
-  height: 30px;
-  width: 650px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #000;
+img.py-2.userImage {
+  width: 200px;
 }

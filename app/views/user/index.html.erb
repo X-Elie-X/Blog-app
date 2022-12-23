@@ -2,9 +2,9 @@
 <h1 class="welcome">Welcome to the Users Page. Below is the list of users.</h1>
     <% User.all.each do |user| %>
     <div class="user-container">
-    <div  class = "user_profile">
-      <div> <%= image_tag "img/profile.jpeg" %>  </div>
-    <div class="borders">
+    <div  class = "user_profile col-4">
+      <div> <img src= "<%= user.photo %>" class="py-2 userImage"> </div>
+    <div class="borders col-8">
     <%= link_to user do %>
     <div class="user-name"><%= user.name %></div>
      <% end %>
